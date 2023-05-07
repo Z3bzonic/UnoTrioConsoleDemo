@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Entity\**" />
+    <Compile Remove="Enum\**" />
+    <EmbeddedResource Remove="Entity\**" />
+    <EmbeddedResource Remove="Enum\**" />
+    <None Remove="Entity\**" />
+    <None Remove="Enum\**" />
+  </ItemGroup>
+
+</Project>

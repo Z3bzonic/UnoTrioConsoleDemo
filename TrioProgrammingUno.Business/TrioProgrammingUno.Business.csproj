@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Base\**" />
+    <Compile Remove="Interface\**" />
+    <EmbeddedResource Remove="Base\**" />
+    <EmbeddedResource Remove="Interface\**" />
+    <None Remove="Base\**" />
+    <None Remove="Interface\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TrioProgrammingUno.Common\TrioProgrammingUno.Common.csproj" />
+  </ItemGroup>
+
+</Project>
